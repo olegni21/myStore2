@@ -1,0 +1,893 @@
+/* Carousel */
+
+.carousel {
+	position: relative;
+	height: 850px;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+    z-index: 1;
+	transition: opacity 2s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide:hover {
+	cursor: pointer;
+}
+
+/* Carousel Buttons */
+
+.carousel-btns {
+	text-align: center;
+	padding-top: 800px;
+	margin-left: calc(50% - 35.5px);
+	width: 71px;
+	position: absolute;
+	z-index: 5;
+}
+
+.carousel-btns button {
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+	border: 0;
+	margin-left: 22px;
+	outline: none;
+	cursor: pointer;
+}
+
+.carousel-btns button:first-child {
+	margin-left: 0;
+}
+
+.button-active-state {
+	background-color: #f14a58 !important;
+}
+
+
+/* Carousel Black&White */
+/************************/
+
+.carousel-wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.black-white-slide {
+	background: url('../img/start/carousel/carousel_1.jpg') no-repeat;
+	height: 850px;
+	overflow: hidden;
+	background-position: center;
+}
+
+.white-box {
+	background-color: #fff;
+	width: 385px;
+	margin-left: calc(50% - 192px);
+	height: 476px;
+	margin-top: 122px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.white-box h4 {
+	margin-bottom: 45px;
+}
+
+.white-box h1 {
+	text-transform: lowercase;
+	font-size: 90px;
+	color: #f14a58;
+	margin-bottom: 87px;
+	letter-spacing: 4.6px;
+	margin-left: 3px;
+}
+
+.white-box span {
+	font-family: RobotoRegular, Arial, sans-serif;
+	font-size: 16px;
+	float: left;
+}
+
+.spring-summer-box {
+	overflow: hidden;
+	width: 199px;
+	margin: 0 auto;
+	padding-left: 15px;
+}
+
+.red-line {
+	height: 3px;
+	width: 62px;
+	background-color: #f14a58;
+	float: left;
+	margin: 0 12px;
+	line-height: 21px;
+	margin-top: 11px;
+}
+
+.first-slide-line {
+	width: 100%;
+	height: 1px;
+	margin-top: 123px;
+	background-color: rgba(193, 192, 192, 0.17);
+}
+
+/* Carousel Black&White Tablet Media */
+
+@media screen and (max-width: 1024px) {
+
+	.carousel-wrapper {
+		max-width: 768px;
+	}
+
+	.carousel {
+		height: 820px;
+	}
+
+	.white-box {
+		width: 320px;
+		height: 435px;
+		padding-top: 45px;
+		margin-left: calc(50% - 158px);
+		margin-top: 152px;
+	}
+
+	.black-white-slide {
+		background: url('../img/start/carousel/carousel_1_md.jpg') no-repeat;
+		height: 820px;
+	}
+
+	.white-box span {
+		font-size: 14px;
+	}
+
+	.white-box h1 {
+		font-size: 70px;
+	}
+
+	.white-box h4 {
+		margin-bottom: 66px;
+	}
+
+	.spring-summer-box {
+		width: 176px;
+	}
+
+	.red-line {
+		width: 52px;
+	}
+
+	.carousel-btns {
+		padding-top: 780px;
+	}
+}
+
+/* Carousel Black&White Mobile Media */
+
+@media screen and (max-width: 767px) {
+		
+	.carousel {
+		height: 530px;
+		width: 375px;
+		margin: 0 auto;
+	}
+
+	.black-white-slide {
+		background: url('../img/start/carousel/carousel_1_sm.jpg') no-repeat;
+		height: 530px;
+		width: 375px;
+		margin: 0 auto;
+	}
+
+	.white-box {
+		width: 255px;
+		height: 314px;
+		padding-top: 31px;
+		margin-left: calc(50% - 127px);
+		margin-top: 66px;
+	}
+
+	.white-box h1 {
+		font-size: 55px;
+		margin-bottom: 51px;
+	}
+
+	.white-box h4 {
+		margin-bottom: 31px;
+	}
+
+	.red-line {
+		width: 44px;
+	}
+
+	.spring-summer-box {
+		width: 168px;
+	}
+
+	.black-white-slide .carousel-btns {
+		margin-top: 64px;
+		padding-top: 16px;
+	}
+
+	.carousel-btns {
+		padding-top: 492px;
+	}
+
+	.first-slide-line {
+		margin-top: 64px;
+	}
+}
+
+
+/* Carousel Multi-Blocks  */
+/**************************/
+
+.multi-block-slide a {
+	display: block;
+}
+
+.left-blocks a {
+	height: 385px;
+}
+
+.left-blocks,
+.right-long-block {
+	float: left;
+}
+
+.left-blocks {
+	width: 75%;
+}
+
+.left-blocks a:nth-child(1n+2) {
+	width: 33.33%;
+	float: left;
+}
+
+.right-long-block {
+	width: 25%;
+	float: left;
+}
+
+.left-blocks-1 {
+	float: left;
+	width: 66.66%;
+	background: url('../img/start/carousel/carousel_2_item1.jpg') no-repeat;
+	background-position: center;
+}
+
+.left-blocks-1 h1 {
+	margin-left: 61.53%;
+	margin-top: 65px;
+}
+
+.left-blocks-1 span {
+	margin-left: 70.76%;
+}
+
+.left-blocks-2 {
+	background: url('../img/start/carousel/carousel_2_item2.jpg') no-repeat;
+	background-position: center;
+}
+
+.left-blocks-3 {
+	background: url('../img/start/carousel/carousel_2_item3.jpg') no-repeat;
+	background-position: center;
+}
+
+.left-blocks-4 {
+	background: url('../img/start/carousel/carousel_2_item4.jpg') no-repeat;
+	background-position: center;
+}
+
+.left-blocks-4 h1 {
+	color: #f14a58;
+}
+
+.left-blocks-5 {
+	background-color: #f14a58;
+	background-position: center;
+}
+
+.lookbook {
+	height: 769px;
+	background: url('../img/start/carousel/carousel_2_item6.jpg') no-repeat;
+}
+
+.lookbook h1 {
+	padding-top: 66px;
+}
+
+.left-blocks h1,
+.lookbook h1 {
+	font-size: 28px;
+}
+
+.left-blocks span,
+.lookbook span {
+	font-family: 'Times New Roman', Georgia, serif;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.left-blocks > a:nth-child(2n+1) h1,
+.left-blocks > a:nth-child(2n+1) span {
+	color: #fff;
+}
+
+.left-blocks > a:nth-child(2n+2) span,
+.lookbook span {
+	color: #757575;
+}
+
+.left-blocks a:nth-child(1n+2),
+.right-long-block {
+	text-align: center;
+}
+
+.left-blocks > a:nth-child(1n+2) h1 {
+	padding-top: 280px;
+}
+
+/* Carousel Multi-Blocks Tablet Media */
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+	.left-blocks a {
+		height: 252px;
+	}
+
+	.left-blocks {
+		width: 66.66%;
+	}
+
+	.left-blocks-1 {
+		width: 100%;
+		background: url('../img/start/carousel/carousel_2_item1_md.jpg') no-repeat;
+		background-position: center;
+	}
+
+	.left-blocks-2 {
+		background: url('../img/start/carousel/carousel_2_item2_md.jpg') no-repeat;
+		background-position: center;
+	}
+
+	.left-blocks-3 {
+		background: url('../img/start/carousel/carousel_2_item3_md.jpg') no-repeat;
+		background-position: center;
+	}
+
+	.left-blocks-4 {
+		background: url('../img/start/carousel/carousel_2_item4_md.jpg') no-repeat;
+		background-position: center;
+	}
+
+	.lookbook {
+		background: url('../img/start/carousel/carousel_2_item6_md.jpg') no-repeat;
+		height: 754px;
+	}
+
+	.left-blocks > a:nth-child(1n+2) h1 {
+		padding-top: 173px;
+	}
+
+	.left-blocks > a:nth-child(1n+2) {
+		width: 50%;
+	}
+
+	.right-long-block {
+		width: 33.33%;
+	}
+
+	.left-blocks h1,
+	.lookbook h1 {
+		font-size: 22px;
+	}
+
+	.lookbook h1 {
+		padding-top: 35px;
+	}
+
+	.left-blocks-1 h1 {
+		margin-top: 35px;
+		margin-left: 318px;
+	}
+
+	.left-blocks-1 span {
+		margin-left: 360px;
+	}	
+}
+
+/* Carousel Multi-Blocks Mobile Media */
+
+@media screen and (max-width: 767px) {
+
+	.multi-block-slide {
+		width: 375px;
+		margin: 0 auto;
+	}
+	
+	.right-long-block,
+	.left-blocks > a:nth-child(3n+2) {
+		display: none;
+	}
+
+	.left-blocks a:nth-child(1n+2) {
+		width: 50%;
+	}
+
+	.left-blocks-1 {
+		width: 100%;
+		background: url('../img/start/carousel/carousel_2_item1_sm.jpg') no-repeat;
+	}
+
+	.left-blocks-3 {
+		background: url('../img/start/carousel/carousel_2_item3_sm.jpg') no-repeat;
+	}
+
+	.left-blocks-4 {
+		background: url('../img/start/carousel/carousel_2_item4_sm.jpg') no-repeat;
+	}
+
+	.left-blocks a {
+		height: 238px;
+	}
+
+	.left-blocks {
+		width: 100%;
+	}
+
+	.left-blocks > a:nth-child(1n+2) h1 {
+		padding-top: 160px;
+	}
+
+	.left-blocks h1 {
+		font-size: 20px;
+	}
+
+	.left-blocks span {
+		font-size: 14px;
+	}
+
+	.left-blocks-1 h1 {
+		margin-left: 210px;
+		margin-top: 40px;
+	}
+
+	.left-blocks-1 span {
+		margin-left: 247px;
+	}
+}
+
+
+/* Carousel Dicsount */
+/*********************/
+
+.discount-slide {
+	height: 850px;
+	background: url('../img/start/carousel/carousel_3.jpg') no-repeat;
+	background-position: center;
+	text-align: center;
+}
+
+.discount-slide p:first-child {
+	font-size: 22px;
+	padding-top: 650px;
+	margin-bottom: 26px;
+}
+
+.discount-slide p:first-child > span {
+	color: #50c1e9;
+	font-size: 22px;
+}
+
+.discount-slide p:nth-child(2) {
+	font-family: 'Times New Roman', Georgia, serif;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.another-bg {
+	background-color: #d0bd64 ;
+}
+
+.another-active-state {
+	background-color: #50c1e9 !important;
+}
+
+.third-slide-line {
+	width: 100%;
+	height: 1px;
+	margin-top: 46px;
+	background-color: #e4ce6d;
+}
+
+/* Carousel Dicsount Tablet Media */
+
+@media screen and (max-width: 1024px) {
+
+	.discount-slide {
+		height: 820px;
+		background: url('../img/start/carousel/carousel_3_md.jpg') no-repeat;
+	}
+
+	.discount-slide p:first-child {
+		max-width: 500px;
+		margin: 0 auto;
+		padding-top: 590px;
+		margin-bottom: 30px;
+	}
+
+	.discount-slide p:nth-child(2) {
+		max-width: 540px;
+		margin: 0 auto;
+	}
+
+	.third-slide-line {
+		margin-top: 40px;
+	}
+}
+
+/* Carousel Dicsount Mobile Media */
+
+@media screen and (max-width: 767px) {
+
+	.discount-slide {
+		height: 530px;
+		background: url('../img/start/carousel/carousel_3_sm.jpg') no-repeat;
+		width: 375px;
+		margin: 0 auto;
+	}
+
+	.discount-slide p:nth-child(2) {
+		display: none;
+	}
+
+	.discount-slide p:first-child {
+		padding-top: 365px;
+		font-size: 18px;
+		max-width: 205px;
+	}
+
+	.discount-slide p:first-child > span {
+		font-size: 18px;
+	}
+
+	.third-slide-line {
+		margin-top: 40px;
+	}
+}
+
+
+/* Banner */
+/**********/
+
+.start-banner a {
+	display: block;
+}
+
+.nike-banner,
+.caps-hats-banner {
+	height: 385px;
+	float: left;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.nike-banner h2,
+.caps-hats-banner h2 {
+	font-size: 28px;
+	margin-bottom: 7px;
+	margin-left: 65.23%;
+	margin-top: 58px;
+}
+
+.nike-banner span,
+.caps-hats-banner span {
+	font-size: 16px;
+	font-family: 'Times New Roman', Georgia, serif;
+	color: #757575;
+	font-style: italic;
+	margin-left: 72.61%;
+}
+
+.caps-hats-banner h2 {
+	margin-left: 57.5%;
+}
+
+.caps-hats-banner span {
+	margin-left: 65.5%;
+}
+
+.nike-banner {
+	width: 50%;
+	background: url('../img/start/banner/nike_red.png') no-repeat;
+	background-position: 48px 52px;
+	border-right: 1px solid #e5e5e5;
+}
+
+.caps-hats-banner {
+	width: calc(50% - 2px);
+	background: url('../img/start/banner/caps_hats.png') no-repeat;
+	background-color: #f7f7f7;
+	background-position: 47px;
+}
+
+.start-banner a:nth-child(3) {
+	display: none;
+}
+
+/* Start-Banner Decktop Media */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.nike-banner {
+		background-position: center;
+	}
+}
+
+/* Start-Banner Tablet Media */
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+	.start-banner a:nth-child(3) {
+		display: block;
+	}
+
+	.start-banner a:nth-child(2) {
+		display: none;
+	}
+
+	.nike-banner,
+	.sale-banner {
+		height: 251px;
+	}
+
+	.nike-banner {
+		width: calc(66.66% - 1px);
+		background: url('../img/start/banner/nike_red_md.jpg') no-repeat;
+		border-right: 1px solid #e5e5e5;
+	}
+
+	.sale-banner {
+		width: 33.33%;
+		float: left;
+		background: url('../img/start/banner/sale.jpg') no-repeat;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.nike-banner h2,
+	.sale-banner h2 {
+		font-size: 22px;
+	}
+
+	.sale-banner h2 {
+		color: #f14a58;
+		margin-bottom: 8px;
+		margin-top: 168px;
+		margin-left: 105px;
+	}
+
+	.sale-banner span {
+		font-size: 16px;
+		font-family: 'Times New Roman', Georgia, serif;
+		color: #757575;
+		font-style: italic;
+		margin-left: 108px;
+	}
+
+	.nike-banner h2 {
+		margin-left: 334px;
+		margin-top: 30px;
+	}
+
+	.nike-banner span {
+		margin-left: 370px;
+	}
+}
+
+/* Start-Banner Mobile Media */
+
+@media screen and (max-width: 767px) {
+
+	.start-banner a:nth-child(3),
+	.start-banner a:nth-child(2) {
+		display: none;
+	}
+
+	.nike-banner {
+		height: 239px;
+		width: 375px;
+		background: url('../img/start/banner/nike_red_sm.jpg') no-repeat;
+		border: none;
+	}
+
+	.nike-banner h2 {
+		font-size: 22px;
+		margin-left: 218px;
+		margin-top: 30px;
+		margin-bottom: 3px;
+	}
+
+	.nike-banner span {
+		margin-left: 258px;
+		font-size: 14px;
+	}
+}
+
+
+/* Arrivals */
+/************/
+
+.arrivals-wrapper {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.arrivals {
+	padding-top: 128px;
+	padding-bottom: 79px;
+	text-align: center;
+}
+
+.arrivals h1 {
+	font-size: 50px;
+	margin-bottom: 83px;
+	letter-spacing: 1px
+}
+
+.arrivals-box {
+	overflow: hidden;
+	margin-bottom: 95px;
+}
+
+.arrivals-box a {
+	display: block;
+}
+
+.product-box {
+	float: left;
+	width: 20.33%; 
+	text-align: center;
+	margin-left: 6.20%; 
+	
+}
+
+.product-box:hover h4 {
+	color: #f14a58;
+}
+
+.product-box:first-child {
+	margin-left: 0;
+}
+
+.product-box img {
+	width: 100%;
+	display: block;
+	margin-bottom: 42px;
+}
+
+.product-box h4 {
+	margin-bottom: 14px;
+	font-family: RobotoBold, Arial, sans-serif;
+}
+
+.product-box span {
+	font-family: RobotoRegular, Arial, sans-serif;
+	padding-left: 2px;
+}
+
+.product-box:nth-child(2) h4:nth-child(2) {
+	margin-bottom: 5px;
+}
+
+.product-box:nth-child(2) h4:nth-child(3) {
+	margin-bottom: 14px
+}
+
+/* Arrivals Tablet Media */
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+	
+	.product-box:nth-child(4) {
+		display: none;
+	}
+
+	.arrivals {
+		width: 690px;
+		padding-top: 86px;
+		padding-bottom: 138px;
+		margin: 0 auto;
+	}
+
+	.arrivals h1 {
+		font-size: 40px;
+		margin-bottom: 73px;
+	}
+
+	.product-box {
+		width: 204px;
+		margin-left: 39px;
+	}
+
+	.product-box img {
+		margin-bottom: 36px;
+	}
+
+	.arrivals-btn {
+		width: 300px;
+		font-size: 20px;
+	}
+
+	.arrivals-box {
+		margin-bottom: 87px;
+	}
+
+	.product-box:nth-child(2) h4:nth-child(3) {
+		margin-bottom: 13px
+	}
+}
+
+/* Arrivals Mobile Media */
+
+@media screen and (max-width: 767px) {
+	
+	.product-box:nth-child(1n+3) {
+		display: none;
+	}
+
+	.arrivals {
+		width: 335px;
+		padding-top: 52px;
+		padding-bottom: 107px;
+	}
+
+	.arrivals h1 {
+		font-size: 26px;
+		margin-bottom: 42px;
+	}
+
+	.product-box {
+		width: 158px;
+		margin-left: 19px;
+	}
+
+	.product-box h4,
+	.product-box span {
+		font-size: 12px;
+	}
+
+	.product-box:nth-child(2) h4:nth-child(2) {
+		margin-bottom: 3px;
+	}
+
+	.product-box:nth-child(1) h4:nth-child(2),
+	.product-box:nth-child(2) h4:nth-child(3) {
+		margin-bottom: 8px;
+	}
+
+	.product-box img {
+		margin-bottom: 26px;
+	}
+
+	.arrivals-btn {
+		padding: 18px 0;
+		width: 218px;
+		font-size: 18px;
+	}
+
+	.arrivals-box {
+		margin-bottom: 65px;
+	}
+
+	/* Mobile Menu */
+
+	.mobile-menu {
+		margin-top: -43px;
+	}
+}
